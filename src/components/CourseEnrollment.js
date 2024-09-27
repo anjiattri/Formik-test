@@ -67,11 +67,12 @@ function CourseEnrollment() {
           return (
             <Form>
               <FormikControl
-                control="input"
+                control="chakrainput"
                 type="email"
                 label="Email"
                 name="email"
               />
+
               <FormikControl control="textarea" label="Bio" name="bio" />
               <FormikControl
                 control="select"

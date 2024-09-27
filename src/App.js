@@ -5,16 +5,19 @@ import FormikContainer from "./components/FormikContainer";
 import LoginForm from "./components/LoginForm";
 import RegistrationForm from "./components/RegistrationForm";
 import CourseEnrollment from "./components/CourseEnrollment";
+import { ThemeProvider, theme } from "@chakra-ui/react";
 
 function App() {
   return (
-    <div className="App">
-      {/* <YouTubeForm/> */}
-      {/* <FormikContainer /> */}
-      {/* <LoginForm /> */}
-      {/* <RegistrationForm /> */}
-      <CourseEnrollment />
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        {/* <YouTubeForm/> */}
+        {/* <FormikContainer /> */}
+        {/* <LoginForm /> */}
+        {/* <RegistrationForm /> */}
+        <CourseEnrollment />
+      </div>
+    </ThemeProvider>
   );
 }
 
